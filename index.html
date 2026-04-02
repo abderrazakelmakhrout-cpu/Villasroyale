@@ -679,7 +679,7 @@
           </div>
           <div>
             <div class="info-label">Téléphone & WhatsApp</div>
-            <div class="info-value">+212 6XX XX XX XX</div>
+            <div class="info-value">+212 606 325 731</div>
           </div>
         </div>
         <div class="info-item">
@@ -688,7 +688,7 @@
           </div>
           <div>
             <div class="info-label">Email</div>
-            <div class="info-value">contact@villaroyale.ma</div>
+            <div class="info-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c0a3afaeb4a1a3b480b6a9acaca1b2afb9a1aca5eeada1">[email&#160;protected]</a></div>
           </div>
         </div>
         <div class="info-item">
@@ -701,7 +701,7 @@
           </div>
         </div>
       </div>
-      <a href="https://wa.me/212600000000" class="whatsapp-btn" target="_blank">
+      <a href="https://wa.me/212606325731" class="whatsapp-btn" target="_blank">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
         Écrire sur WhatsApp
       </a>
@@ -712,16 +712,16 @@
         <div class="form-row">
           <div class="form-group">
             <label>Prénom & Nom</label>
-            <input type="text" placeholder="Mohammed Al Fassi" required>
+            <input id="f-nom" type="text" placeholder="Mohammed Al Fassi" required>
           </div>
           <div class="form-group">
             <label>Téléphone</label>
-            <input type="tel" placeholder="+212 6XX XXX XXX" required>
+            <input id="f-tel" type="tel" placeholder="+212 6XX XXX XXX" required>
           </div>
         </div>
         <div class="form-group">
           <label>Destination souhaitée</label>
-          <select required>
+          <select id="f-dest" required>
             <option value="" disabled selected>Choisir une région...</option>
             <option>Bouznika</option>
             <option>Benslimane</option>
@@ -733,17 +733,17 @@
         <div class="form-row">
           <div class="form-group">
             <label>Date d'arrivée</label>
-            <input type="date" required>
+            <input id="f-arrivee" type="date" required>
           </div>
           <div class="form-group">
             <label>Date de départ</label>
-            <input type="date" required>
+            <input id="f-depart" type="date" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
             <label>Nombre de personnes</label>
-            <select>
+            <select id="f-personnes">
               <option>Moins de 10</option>
               <option>10 à 20</option>
               <option>20 à 50</option>
@@ -752,7 +752,7 @@
           </div>
           <div class="form-group">
             <label>Budget / nuit (MAD)</label>
-            <select>
+            <select id="f-budget">
               <option>Moins de 3 000</option>
               <option>3 000 – 6 000</option>
               <option>6 000 – 10 000</option>
@@ -762,9 +762,12 @@
         </div>
         <div class="form-group">
           <label>Message ou demande spéciale</label>
-          <textarea placeholder="Ex : mariage de 80 personnes, piscine chauffée, proche de la plage..."></textarea>
+          <textarea id="f-message" placeholder="Ex : mariage de 80 personnes, piscine chauffée, proche de la plage..."></textarea>
         </div>
-        <button type="submit" class="submit-btn">Envoyer ma demande →</button>
+        <button type="submit" class="submit-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="vertical-align:middle;margin-right:8px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+          Envoyer sur WhatsApp →
+        </button>
       </form>
     </div>
   </div>
@@ -782,7 +785,7 @@
   <div class="footer-copy">© 2025 VillaRoyale — Location de villas de luxe au Maroc · Bouznika · Benslimane · Mohammedia · Skhirat</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
   const quotes = [
     { text: '"Une villa magnifique à Bouznika, piscine chauffée, tout était propre et prêt à l\'arrivée. Le propriétaire a été très réactif. On reviendra sans hésiter !"', author: 'Samira B. — Famille de 12 personnes' },
     { text: '"Ferme parfaite pour notre séminaire d\'entreprise. Grand espace, calme total, vue incroyable. L\'équipe a tout facilité de A à Z."', author: 'Karim E. — Directeur RH, Casablanca' },
@@ -800,19 +803,40 @@
 
   function handleSubmit(e) {
     e.preventDefault();
+    const nom      = document.getElementById('f-nom').value.trim();
+    const tel      = document.getElementById('f-tel').value.trim();
+    const dest     = document.getElementById('f-dest').value;
+    const arrivee  = document.getElementById('f-arrivee').value;
+    const depart   = document.getElementById('f-depart').value;
+    const personnes= document.getElementById('f-personnes').value;
+    const budget   = document.getElementById('f-budget').value;
+    const message  = document.getElementById('f-message').value.trim();
+
+    const texte =
+`🏡 *Nouvelle demande de réservation — VillaRoyale*
+
+👤 *Nom :* ${nom}
+📞 *Téléphone :* ${tel}
+📍 *Destination :* ${dest}
+📅 *Arrivée :* ${arrivee}
+📅 *Départ :* ${depart}
+👥 *Personnes :* ${personnes}
+💰 *Budget/nuit :* ${budget} MAD
+💬 *Message :* ${message || 'Aucun message'}`;
+
+    const url = 'https://wa.me/212606325731?text=' + encodeURIComponent(texte);
+    window.open(url, '_blank');
+
     const btn = e.target.querySelector('.submit-btn');
-    btn.textContent = '✓ Demande envoyée — nous vous contactons très vite !';
-    btn.style.background = '#2D6A4F';
+    btn.innerHTML = '✓ WhatsApp ouvert — merci !';
+    btn.style.background = '#25D366';
     btn.style.color = 'white';
+    setTimeout(() => {
+      btn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="white" style="vertical-align:middle;margin-right:8px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg> Envoyer sur WhatsApp →';
+      btn.style.background = '';
+      btn.style.color = '';
+    }, 4000);
   }
 
   // Smooth scroll for nav links
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      e.preventDefault();
-      document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-</script>
-</body>
-</html>
+  document.querySelectorA
